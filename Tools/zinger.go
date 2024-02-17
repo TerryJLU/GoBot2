@@ -9,7 +9,7 @@ import(
 
 func main(){
 	tr := &http.Transport{
-		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true },
 	}
 	client := &http.Client{Transport: tr}
 	//client := &http.Client{}
